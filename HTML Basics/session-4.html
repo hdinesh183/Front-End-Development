@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session-4</title>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-color: blueviolet;
+            border-style: double;
+        }
+        td.th{
+            padding: 10px;
+            width: 100px;
+        }
+        table{
+            width: 50%;
+        }
+
+        label,input{
+            margin: 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+        *{
+            background-color:azure;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>List and its Types</h1>
+    <h2>Ordered List</h2>
+    <ol>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ol>
+
+    <h2>Unorderd List</h2>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>FOur</li>
+    </ul>
+    <h2>Description list</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>Dinesh</dd>
+        <dt>Roll</dt>
+        <dd>22F41A0540</dd>
+    </dl>
+
+    <h1>Table</h1>
+    <table>
+        <tr><caption><h2>Monthly Budget</h2></caption></tr>
+    
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            <th>Spendings</th>
+            <th>Total</th>
+            <th rowspan="7">Nothing</th>
+        </tr>
+        <tr>
+            <th>Jan</th>
+            <td>2000</td>
+            <td>3000</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <th>Feb</th>
+            <td>4000</td>
+            <td>4000</td>
+            <td>8000</td>
+        </tr>
+        <tr>
+            <th>Mar</th>
+            <td>2000</td>
+            <td>3000</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <th>Apr</th>
+            <td>5000</td>
+            <td>5000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <th>May</th>
+            <td>3000</td>
+            <td>3000</td>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td colspan="4"><center>Nothing</center></td>
+        </tr>
+    </table>
+
+    <h1>Forms</h1>
+    <form action="index.html" method="get" target="_blank">
+        <label for="name">Name</label>
+        <input type="text" name="name"><br>
+        <label for="rollno">Roll No.</label>
+        <input type="text" name="roll"><br>
+        <!-- types of inputs 
+         text
+         password
+         email
+         number
+         radio
+         date
+         checkbox
+         file
+         reset
+         submit
+         select tag -->
+         <label for="select">Select</label><br>
+         <fieldset>
+         <legend>select</legend><br>
+         <select name="select" id="" >
+            <option value="0">select</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="Three">3</option>
+            <option value="four">4</option>
+         </select></fieldset>
+
+         <!-- Field set and legend 
+          Field set: used for grouping set of input values
+          legend: heading of the field set-->
+         <fieldset style="margin-top: 20px;">
+            <legend>Registration form</legend>
+            <label for="name">Name</label>
+            <input type="text"><br>
+            <label for="email">Email</label>
+            <input type="email"><br>
+            <label for="mobileno">mobile no</label>
+            <input type="tel" maxlength="10"><br>
+            <label for="password">password</label>
+            <input type="password"><br>
+            <label for="gender">gender</label>
+            <input type="radio"  name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio"  name="gender" value="female">
+            <label for="female">female</label><br>
+            <label for="skills">skills</label><br>
+            <input type="checkbox">
+            <label for="c">C</label><br>
+            <input type="checkbox">
+            <label for="python">Python</label><br>
+            <input type="checkbox">
+            <label for="Front End">Front End</label><br>
+            <label for="address">address</label><br>
+            <textarea name="address" id="" rows="4" cols="40"  style="margin-left: 20px;"></textarea><br>
+            <center><input type="submit"></center>
+         </fieldset>
+
+         <fieldset>
+            <legend>Table Form</legend>
+            <table>
+                <tr>
+                <tr>
+                    <td><label for="name" id="name">Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+            </table>
+         </fieldset>
+    </form>
+    <iframe src="./abc.mp3" style="height:200px;width:500px;" title="Iframe Example"></iframe>
+  
+
+
+
+    <!-- Working of API's -->
+     <p>This is a button to get your location</p>
+     <button onclick="getLocation()">Try it</button>
+     <p id="demo"></p>
+    <script>
+        // to select the HTML content using JS
+        var a=document.getElementById("demo");
+        function getLocation(){
+            if(navigator.geolocation)//API call
+            {
+                navigator.geolocation.getCurrentPosition(showPos);
+            }
+            else{
+                a.innerHTML="Geolocation is not supported"
+            }
+        }
+        function showPos(position){
+            a.innerHTML="latitude: "+position.coords.latitude+"<br> Longitude: "+position.coords.longitude;
+        }
+    </script>
+
+</body>
+</html>

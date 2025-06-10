@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H Dinesh Portfolio</title>
+    <style>
+      body{
+        background-image: linear-gradient(to bottom right, pink,white,grey);
+      }
+      /* #contact-me{
+        background-color: beige;
+        
+      } */
+      table{
+        width: 100%;
+        height: 100px;
+      }
+      td{
+        margin-left: 50%;
+      }
+      tr{
+        margin-top: 20px ;
+      }
+      button{
+        padding: 10px;
+        background-color:burlywood;
+        border-radius: 20%;
+      }
+      button:hover{
+        background-color: aqua;
+      }
+    </style>
+</head>
+<body style="margin-left: 50px; ">
+    <center><div>
+        <img style="border-radius: 50%; float: left;" src="data:image/jpeg;base64,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" alt="My photo" float="left" height="500px" width="400px" >
+        <h1 style="font-size: 50px; padding-top: 190px; ">H Dinesh</h1>
+        <h3 style="padding-bottom: 250px;">Computer Science Engineer</h3>
+    </div></center>
+
+    <hr>
+
+    <div id="sections">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#personal">Personal Details</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    <hr>
+
+
+    <div id="about" style="padding: 20px 10px 20px 10px;">
+      <h2>About</h2>
+      <p>I completed my Computer Science and engineering at kuppam engineering college and iam present studying my fourth year of my B. Tech.</p>
+      
+    </div>
+
+    <hr>
+
+    <div id="projects" style="padding: 20px 10px 20px 10px;">
+      <h2>Projects</h2>
+      <ul>
+        <li>Mini quiz app using Java</li>
+        <li>precipitation forcasting using ML</li>
+        <li>Developing some Web sites</li>
+      </ul>
+    </div>
+
+
+    <hr>
+
+
+    <div id="personal" style="padding: 20px 10px 20px 10px;">
+      <h2>Personal Details</h2>
+      <ol>
+        <li><h3>location:</h3> kuppam</li>
+        <li><h3>Age:</h3> 20 years</li>
+      </ol>
+    </div>
+
+    <hr>
+
+    <div id="contact" style="padding: 20px 10px 20px 10px;" >
+      <h2>Contact Details</h2>
+      <ul>
+        <li><a href="mailto:hd333@gmail,com">💬mail: hd333@gmail.com</a></li>
+        <li>Phone no.: 1234567890</li>
+        <li><a href="">Github: hdinesh183</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div id="contact-me">
+      <form action="">
+        <h2>Contact me</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <td><input type="text"></td>
+            <th>Email</th>
+            <td><input type="email"></td>
+          </tr>
+          <tr>
+            <th>Phone No.</th>
+            <td><input type="tel" name="" id=""></td>
+            <th>Message</th>
+            <td><input type="text"></td>
+          </tr>
+        
+        </table>
+        <center>
+        <a href="./session-5.html"><button>Send</button></a>
+        </center>
+      </form>
+    </div>
+
+    <hr>
+
+    <div style="background-color: bisque;">
+      <p style="padding: 20px;">© 2025 H Dinesh</p>
+    </div>
+
+</body>
+</html>
