@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with css</title>
+    <link rel="stylesheet" href="./styleform.css">
+</head>
+<body>
+     <form action="index.html" method="get" target="_blank">
+     
+        <!-- types of inputs 
+         text
+         password
+         email
+         number
+         radio
+         date
+         checkbox
+         file
+         reset
+         submit
+         select tag -->
+        
+
+         <!-- Field set and legend 
+          Field set: used for grouping set of input values
+          legend: heading of the field set-->
+         
+            <h2>>>Registration form</h2>
+            <label for="name">Name</label>
+            <input type="text"><br>
+            <label for="email">Email</label>
+            <input type="email"><br>
+            <label for="mobileno">mobile no</label>
+            <input type="tel" maxlength="10"><br>
+            <label for="password">password</label>
+            <input type="password"><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio"  name="gender" value="male">Male <br>
+
+            <input type="radio"  name="gender" value="female">Female<br>
+            <label for="select">Select</label><br>
+            <select name="select" id="" >
+                <option value="0">select</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="Three">3</option>
+                <option value="four">4</option>
+             </select><br>
+            <label for="skills">skills</label><br>
+            <input type="checkbox">C<br>
+            <input type="checkbox">Python<br>
+            <input type="checkbox">Front End<br>
+            <label for="address">address</label><br>
+            <textarea name="address" id="" rows="4" style="margin-left: 20px;"></textarea><br>
+            <center><input type="submit"></center>
+         
+
+        
+            
+        </form>
+</body>
+</html>

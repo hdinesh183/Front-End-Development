@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Internal css */
+        .one{
+            background-color: #000000;
+            height: 300px;
+            margin-top: 20px;
+            width: 300px;
+        }
+        .par{
+            width: auto;
+            background-color: burlywood;
+
+            display: flex;
+            gap: 10px;
+            position: relative;
+        }
+
+        .one > p{
+            background-color:aqua;
+        }
+
+        div p{
+            font-size: 20px;
+        }
+        p>span{
+            font-style: italic;
+        }
+
+        h1#title.big{
+            color: blueviolet;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aliceblue;
+            margin-top: 20px;
+
+            padding: 50px 20px 30px 30px;
+            border: 10px dashed pink;
+
+        }
+        div h1{
+            background-color: pink;
+            text-align: center;
+        }
+
+        .circle{
+            height: 500px;
+            width: 500px;
+            background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+            border-radius: 50%;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .circle:hover{
+            background-image: linear-gradient(360deg,violet,indigo,blue,green,yellow,orange,red);
+             
+        }
+        
+        a:hover{
+            color: hotpink;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        h3{
+            position: absolute;
+            background-color: transparent;
+            margin-top: 240px;
+            margin-left: 230px;
+        }
+
+        @media (max-width:600px) {
+            .circle{
+                height: 200px;
+                width: 200px;
+            }
+
+            .box{
+                height: 100px;
+                width: 100px;
+
+            }
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <!-- Inline css 
+     and Inheritence-->
+     <h1 id="title" class="big">CSS selectors</h1>
+    <div class="par">
+        <div class="one" style="background-color: rgb(224, 36, 36); height: 200px; width: 200px;"></div>
+        <div class="one"></div>
+        <div class="one" id="one" draggable="true">
+            <p>hello <span>how</span> are you</p>
+        </div>
+    </div>
+
+    <center><div class="box"><h1>hello</h1></div>
+
+    <div class="circle"><h3>Hello</h3></div></center>
+
+    <div>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank">Helo how  are yoy</a>
+    </div>
+</body>
+</html>
