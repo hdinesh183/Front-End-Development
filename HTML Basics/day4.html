@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Product Grid</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .title {
+      margin-top: 10px;
+    }
+
+    .price {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Emoji Products</h1>
+
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🍎</div>
+      <div class="title">Apple</div>
+      <div class="price">₹10</div>
+    </div>
+    <div class="card">
+      <div class="emoji">🍌</div>
+      <div class="title">Banana</div>
+      <div class="price">₹20</div>
+    </div>
+    <div class="card">
+      <div class="emoji">🍇</div>
+      <div class="title">Grapes</div>
+      <div class="price">₹30</div>
+    </div>
+    <div class="card">
+      <div class="emoji">🍉</div>
+      <div class="title">Watermelon</div>
+      <div class="price">₹40</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
